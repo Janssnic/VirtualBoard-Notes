@@ -1,4 +1,12 @@
-@apiURL = http://localhost:8080/boards
+@apiURL = http://localhost:8080/notes
 
-GET {{{{apiURL}}}}/2
-
+GET {{apiURL}}/1
+###
+POST {{apiURL}}/1
+Content-Type: application/json
+ 
+{
+    "content": "test från .http",
+    "x_loc": 120,
+    "y_loc": 150
+}

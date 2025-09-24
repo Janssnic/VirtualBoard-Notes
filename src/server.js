@@ -1,6 +1,6 @@
 const express = require('express')
-const usersRouter = require('./routes/users')
-const boardsRouter = require('./routes/boards')
+const notesRouter = require('./routes/notes')
+
 const cors = require('cors')
 const bodyParser = require('body-parser');
 
@@ -12,8 +12,7 @@ require('dotenv').config()
 const app = express()
 app.use(bodyParser.json());
 app.use(cors())
-app.use('/users', usersRouter)
-app.use('/boards', boardsRouter)
+app.use('/notes', notesRouter)
 
 
 console.log(`Node.js ${process.version}`)
