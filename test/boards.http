@@ -10,3 +10,14 @@ Content-Type: application/json
     "x_loc": 120,
     "y_loc": 150
 }
+###
+PATCH {{apiURL}}/1
+Content-Type: application/json
+
+{
+    "content": "update från http",
+    "x_loc": 220
+}
+###
+
+DELETE {{apiURL}}/3
