@@ -51,6 +51,7 @@ router.patch('/:id', async (req, res) => {
                 content: req.body.content,
                 x_loc: req.body.x_loc,
                 y_loc: req.body.y_loc,
+                title: req.body.color
             },
         });
         res.json(updatedNote);
